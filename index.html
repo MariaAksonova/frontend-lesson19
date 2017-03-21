@@ -5,7 +5,7 @@
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="lib/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 <header class="main-header">
@@ -45,22 +45,101 @@
     </form>
 </section>
 <section class="expected-movies">
-    <div class="rating"></div>
+    <div class="rating">
+        <p>Рейтинг ожиданий</p>
+    </div>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="first-indicator active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1" class="second-indicator"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2" class="third-indicator"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
                 <img class="d-block img-fluid" src="images/slide1.png" alt="First slide">
+                <div class="container">
+                    <div class="slide-info">
+                        <div class="movie-title">
+                            <h3>Мадагаскар 3</h3>
+                            <h4>Madagascar 3: Europe's Most Wanted</h4>
+                        </div>
+                        <div class="movie-data">
+                            <div class="movie-day">07</div>
+                            <div>
+                                <p class="small-text">На сайте</p>
+                                <p>Июня</p>
+                            </div>
+                            <ul class="movie-rating">
+                                <li class="red-star"></li>
+                                <li class="red-star"></li>
+                                <li class="red-star"></li>
+                                <li class="red-star"></li>
+                                <li></li>
+                            </ul>
+                            <p>9/10</p>
+                        </div>
+                        <div class="movie-info main-text">Бегемотиха Глория, жираф Мелман, зебра Марти и, конечно, лев Алекс
+                            решают вернуться в Нью-Йорк после их побега в Африку. Из-за механических инновации
+                            пресловутого шимпанзе и сумасшедших пингвинов, весь план рушится. </div>
+                    </div>
+                </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block img-fluid" src="images/slide2.jpg" alt="Second slide">
+                <div class="container">
+                    <div class="slide-info">
+                        <div class="movie-title">
+                            <h3>Новый Человек-паук: Высокое напряжение</h3>
+                            <h4>The Amazing Spider-Man 2</h4>
+                        </div>
+                        <div class="movie-data">
+                            <div class="movie-day">28</div>
+                            <div>
+                                <p class="small-text">На сайте</p>
+                                <p>Июня</p>
+                            </div>
+                            <ul class="movie-rating">
+                                <li class="red-star"></li>
+                                <li class="red-star"></li>
+                                <li class="red-star"></li>
+                                <li class="red-star"></li>
+                                <li class="red-star"></li>
+                            </ul>
+                            <p>9,5/10</p>
+                        </div>
+                        <div class="movie-info main-text">Питер Паркер под маской Человека-паука по-прежнему спасает
+                            мир от злодеев и преступников, но школьная пора близится к концу, и впереди героев ждет
+                            взрослая жизнь.</div>
+                    </div>
+                </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block img-fluid" src="images/slide3.jpg" alt="Third slide">
+                <div class="container">
+                    <div class="slide-info">
+                        <div class="movie-title">
+                            <h3>Диктатор</h3>
+                            <h4>The Dictator</h4>
+                        </div>
+                        <div class="movie-data">
+                            <div class="movie-day">16</div>
+                            <div>
+                                <p class="small-text">На сайте</p>
+                                <p>Мая</p>
+                            </div>
+                            <ul class="movie-rating">
+                                <li class="red-star"></li>
+                                <li class="red-star"></li>
+                                <li class="red-star"></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <p>7,5/10</p>
+                        </div>
+                        <div class="movie-info main-text">Героическая история диктатора, который рискует своей жизнью,
+                            чтобы ни в коем случае не допустить демократию в свою столь любовно угнетаемую страну.</div>
+                    </div>
+                </div>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -75,6 +154,5 @@
 </section>
 <script src="lib/jquery-3.1.1.min.js"></script>
 <script src="lib/bootstrap.min.js"></script>
-</body>
 </body>
 </html>

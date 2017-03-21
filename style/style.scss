@@ -1,0 +1,33 @@
+@import "variables";
+@import "fonts";
+@import "slider";
+
+body {
+  background: url("../images/body-bg.png");
+  font-family: $font-main;
+}
+
+.main-text {
+  font-size: 11px;
+}
+
+.small-text {
+  font-size: 9px;
+}
+
+p, ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.expected-movies {
+  .rating {
+    p {
+      color: #A9A9A9;
+      text-shadow: 1px 1px #f3f1f1;
+      font-size: 19px;
+      text-transform: uppercase;
+      font-family: $font-main;
+    }
+  }
+}

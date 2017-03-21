@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Tahoma";
+  src: url("../fonts/Tahoma.ttf") format("truetype"); }
+.carousel:after {
+  content: '';
+  background: url("../images/shape3.png");
+  height: 49px;
+  width: 153px;
+  position: absolute;
+  bottom: -12px;
+  left: 16%; }
+.carousel .container {
+  position: absolute; }
+.carousel .img-fluid {
+  width: 100%; }
+.carousel .first-indicator {
+  background: url("../images/slide-dot1.png");
+  height: 42px;
+  min-width: 93px;
+  border: 1px solid #fff; }
+.carousel .second-indicator {
+  background: url("../images/slide-dot2.png");
+  height: 42px;
+  min-width: 93px;
+  border: 1px solid #fff; }
+.carousel .third-indicator {
+  background: url("../images/slide-dot3.png");
+  height: 42px;
+  min-width: 93px;
+  border: 1px solid #fff; }
+.carousel .carousel-control-prev-icon {
+  background: url("../images/prev.png");
+  height: 52px;
+  width: 53px; }
+.carousel .carousel-control-next-icon {
+  background: url("../images/next.png");
+  height: 52px;
+  width: 53px; }
+.carousel .slide-info {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  width: 320px;
+  position: absolute;
+  right: 0;
+  color: #fff;
+  padding: 10px;
+  top: 10px; }
+  .carousel .slide-info:before {
+    content: '';
+    background: url("../images/shape1.png");
+    height: 66px;
+    width: 45px;
+    position: absolute;
+    z-index: 100;
+    top: 38%;
+    left: -11px; }
+  .carousel .slide-info:after {
+    content: '';
+    background: url("../images/shape2.png");
+    height: 36px;
+    width: 55px;
+    position: absolute;
+    z-index: 100;
+    top: -9px;
+    right: 12px; }
+  .carousel .slide-info h3 {
+    font-size: 16px; }
+  .carousel .slide-info h4 {
+    font-size: 12px; }
+  .carousel .slide-info .movie-data {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around; }
+    .carousel .slide-info .movie-data .movie-day {
+      font-size: 60px;
+      color: #000;
+      background: url("../images/data-bg.png") no-repeat;
+      height: 60px;
+      width: 83px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Tahoma", sans-serif; }
+  .carousel .slide-info .movie-rating li {
+    background: url("../images/star.png");
+    height: 17px;
+    width: 17px;
+    display: inline-block; }
+  .carousel .slide-info .movie-rating .red-star {
+    background: url("../images/red-star.png"); }
+
+body {
+  background: url("../images/body-bg.png");
+  font-family: "Tahoma", sans-serif; }
+
+.main-text {
+  font-size: 11px; }
+
+.small-text {
+  font-size: 9px; }
+
+p, ul {
+  margin-bottom: 0;
+  padding-left: 0; }
+
+.expected-movies .rating p {
+  color: #A9A9A9;
+  text-shadow: 1px 1px #f3f1f1;
+  font-size: 19px;
+  text-transform: uppercase;
+  font-family: "Tahoma", sans-serif; }
+
+/*# sourceMappingURL=style.css.map */
