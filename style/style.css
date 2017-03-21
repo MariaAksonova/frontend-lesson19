@@ -1,6 +1,35 @@
 @font-face {
   font-family: "Tahoma";
   src: url("../fonts/Tahoma.ttf") format("truetype"); }
+.main-header {
+  background: url("../images/header-bg.png");
+  background-size: cover;
+  padding: 12px 0;
+  color: #6d6c6c; }
+  .main-header .logo-part {
+    display: flex;
+    align-items: center; }
+  .main-header p {
+    font-size: 9px;
+    margin-left: 20px; }
+  .main-header .main-nav li {
+    display: inline-block;
+    padding: 0 10px; }
+    .main-header .main-nav li:before {
+      content: '';
+      background: url("../images/border.png");
+      width: 2px;
+      height: 36px; }
+    .main-header .main-nav li a {
+      color: #6d6c6c;
+      font-size: 12px;
+      font-weight: bold; }
+
+.main-header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
 .carousel:after {
   content: '';
   background: url("../images/shape3.png");
@@ -103,11 +132,13 @@ p, ul {
   margin-bottom: 0;
   padding-left: 0; }
 
-.expected-movies .rating p {
-  color: #A9A9A9;
-  text-shadow: 1px 1px #f3f1f1;
-  font-size: 19px;
-  text-transform: uppercase;
-  font-family: "Tahoma", sans-serif; }
+.expected-movies .rating {
+  padding: 14px 0; }
+  .expected-movies .rating p {
+    color: #A9A9A9;
+    text-shadow: 1px 1px #f3f1f1;
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-left: 20%; }
 
 /*# sourceMappingURL=style.css.map */

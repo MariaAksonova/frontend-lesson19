@@ -1,0 +1,44 @@
+@import "variables";
+
+.main-header {
+  background: url("../images/header-bg.png");
+  background-size: cover;
+  padding: 12px 0;
+  color: $grey-color;
+
+  .logo-part {
+    display: flex;
+    align-items: center;
+  }
+
+  p {
+    font-size: 9px;
+    margin-left: 20px;
+  }
+
+  .main-nav {
+    li {
+      display: inline-block;
+      padding: 0 10px;
+
+      &:before {
+        content: '';
+        background: url("../images/border.png");
+        width: 2px;
+        height: 36px;
+      }
+
+      a {
+        color: $grey-color;
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.main-header>.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
