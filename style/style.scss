@@ -23,14 +23,15 @@ p, ul {
 
 .expected-movies {
   .rating {
-    padding: 14px 0;
+    padding: 16px 0 10px 0;
 
     p {
       color: #A9A9A9;
       text-shadow: 1px 1px #f3f1f1;
       font-size: 19px;
       text-transform: uppercase;
-      margin-left: 20%;
+      margin-left: 15%;
     }
   }
 }
+

@@ -41,6 +41,12 @@
     border: 1px solid #fff;
   }
 
+  .carousel-indicators {
+    .active {
+      border: 1px solid #00f;
+    }
+  }
+
   .carousel-control-prev-icon {
     background: url("../images/prev.png");
     height: 52px;
