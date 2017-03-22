@@ -2,6 +2,7 @@
 @import "fonts";
 @import "header";
 @import "slider";
+@import "first-section";
 
 body {
   background: url("../images/body-bg.png");
@@ -33,5 +34,34 @@ p, ul {
       margin-left: 15%;
     }
   }
+}
+
+h4 {
+  font-size: 12px;
+}
+
+.movie-rating {
+
+  li {
+    background: url("../images/star.png");
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+  }
+
+  .red-star {
+    background: url("../images/red-star.png");
+  }
+}
+
+.main-btn {
+  background: url("../images/btn-bg.png");
+  height: 23px;
+  width: 106px;
+  border: none;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  margin-top: 14px;
 }
 

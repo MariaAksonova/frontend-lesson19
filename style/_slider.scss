@@ -90,12 +90,9 @@
       top: -9px;
       right: 12px;
     }
+
     h3 {
       font-size: 16px;
-    }
-
-    h4 {
-      font-size: 12px;
     }
 
     .movie-data {
@@ -113,20 +110,6 @@
         justify-content: center;
         align-items: center;
         font-family: $font-main;
-      }
-    }
-
-    .movie-rating {
-
-      li {
-        background: url("../images/star.png");
-        height: 17px;
-        width: 17px;
-        display: inline-block;
-      }
-
-      .red-star {
-        background: url("../images/red-star.png");
       }
     }
   }

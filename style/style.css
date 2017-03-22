@@ -1,223 +1,86 @@
-@font-face {
-  font-family: "Tahoma";
-  src: url("../fonts/Tahoma.ttf") format("truetype"); }
-.main-header {
-  background: url("../images/header-bg.png");
-  background-size: cover;
-  padding: 8px 0;
-  color: #6d6c6c; }
-  .main-header .logo-part {
-    display: flex;
-    align-items: center; }
-  .main-header p {
-    font-size: 9px;
-    margin-left: 20px; }
-  .main-header .main-nav li {
-    display: inline-block;
-    padding: 0 10px;
-    position: relative; }
-    .main-header .main-nav li:first-child {
-      border-right: 1px solid #fff;
-      position: relative; }
-      .main-header .main-nav li:first-child:after {
-        content: '';
-        background: url("../images/border.png");
-        width: 2px;
-        height: 36px;
-        position: absolute;
-        left: -4px;
-        bottom: 0; }
-    .main-header .main-nav li:before {
-      content: '';
-      background: url("../images/border.png");
-      width: 2px;
-      height: 36px;
-      position: absolute;
-      right: -2px;
-      bottom: 0; }
-    .main-header .main-nav li a {
-      color: #6d6c6c;
-      font-size: 12px;
-      font-weight: bold; }
+/*
+Error: Invalid CSS after "      m": expected "{", was "}"
+        on line 23 of _first-section.scss
+        from line 5 of style.scss
 
-.main-header > .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+18:     }
+19: 
+20:     h4 {
+21:       height: 28px;
+22:       m
+23:     }
+24:   }
+25: 
+26:   .movie-rating {
+27:     position: absolute;
+28:     top: 8px;
 
-.nav {
-  background: url("../images/search-bg.png");
-  background-size: cover;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold; }
-  .nav a {
-    color: #fff;
-    padding: 0 10px; }
-    .nav a:first-child {
-      border-right: 1px solid #fff; }
-      .nav a:first-child:before {
-        content: '';
-        background: url("../images/shape.png");
-        height: 36px;
-        width: 55px;
-        position: absolute;
-        left: -14px;
-        bottom: -10px; }
-  .nav form {
-    display: flex;
-    align-items: center; }
-    .nav form label {
-      background: url("../images/label.png") no-repeat;
-      height: 52px;
-      width: 65px;
-      margin-bottom: 0;
-      margin-right: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative; }
-      .nav form label:after {
-        content: '';
-        background: url("../images/search-shape.png");
-        height: 69px;
-        width: 105px;
-        position: absolute;
-        left: 26px;
-        bottom: -18px;
-        z-index: 100; }
-    .nav form .search {
-      width: 380px;
-      position: relative;
-      line-height: 28px;
-      border-radius: 2px;
-      border: none;
-      padding-left: 14px; }
-    .nav form .submit-btn {
-      background: url("../images/search-btn.png");
-      height: 46px;
-      width: 81px;
-      border: none;
-      position: absolute;
-      right: -8px;
-      top: -10px; }
-
-.nav > .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
-.carousel:after {
-  content: '';
-  background: url("../images/shape3.png");
-  height: 49px;
-  width: 153px;
-  position: absolute;
-  bottom: -12px;
-  left: 16%; }
-.carousel .container {
-  position: absolute; }
-.carousel .img-fluid {
-  width: 100%; }
-.carousel .first-indicator {
-  background: url("../images/slide-dot1.png");
-  height: 42px;
-  min-width: 93px;
-  border: 1px solid #fff; }
-.carousel .second-indicator {
-  background: url("../images/slide-dot2.png");
-  height: 42px;
-  min-width: 93px;
-  border: 1px solid #fff; }
-.carousel .third-indicator {
-  background: url("../images/slide-dot3.png");
-  height: 42px;
-  min-width: 93px;
-  border: 1px solid #fff; }
-.carousel .carousel-indicators .active {
-  border: 1px solid #00f; }
-.carousel .carousel-control-prev-icon {
-  background: url("../images/prev.png");
-  height: 52px;
-  width: 53px; }
-.carousel .carousel-control-next-icon {
-  background: url("../images/next.png");
-  height: 52px;
-  width: 53px; }
-.carousel .slide-info {
-  background-color: rgba(0, 0, 0, 0.75);
-  border-radius: 4px;
-  width: 320px;
-  position: absolute;
-  right: 0;
-  color: #fff;
-  padding: 10px;
-  top: 10px; }
-  .carousel .slide-info:before {
-    content: '';
-    background: url("../images/shape1.png");
-    height: 66px;
-    width: 45px;
-    position: absolute;
-    z-index: 100;
-    top: 38%;
-    left: -11px; }
-  .carousel .slide-info:after {
-    content: '';
-    background: url("../images/shape2.png");
-    height: 36px;
-    width: 55px;
-    position: absolute;
-    z-index: 100;
-    top: -9px;
-    right: 12px; }
-  .carousel .slide-info h3 {
-    font-size: 16px; }
-  .carousel .slide-info h4 {
-    font-size: 12px; }
-  .carousel .slide-info .movie-data {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around; }
-    .carousel .slide-info .movie-data .movie-day {
-      font-size: 60px;
-      color: #000;
-      background: url("../images/data-bg.png") no-repeat;
-      height: 60px;
-      width: 83px;
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      font-family: "Tahoma", sans-serif; }
-  .carousel .slide-info .movie-rating li {
-    background: url("../images/star.png");
-    height: 17px;
-    width: 17px;
-    display: inline-block; }
-  .carousel .slide-info .movie-rating .red-star {
-    background: url("../images/red-star.png"); }
-
-body {
-  background: url("../images/body-bg.png");
-  font-family: "Tahoma", sans-serif; }
-
-.main-text {
-  font-size: 11px; }
-
-.small-text {
-  font-size: 9px; }
-
-p, ul {
-  margin-bottom: 0;
-  padding-left: 0; }
-
-.expected-movies .rating {
-  padding: 16px 0 10px 0; }
-  .expected-movies .rating p {
-    color: #A9A9A9;
-    text-shadow: 1px 1px #f3f1f1;
-    font-size: 19px;
-    text-transform: uppercase;
-    margin-left: 15%; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+_first-section.scss:23
+style.scss:5
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:312:in `to_tree'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/bin/scss:13:in `<top (required)>'
+C:/Ruby23-x64/bin/scss:22:in `load'
+C:/Ruby23-x64/bin/scss:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"      m\": expected \"{\", was \"}\"\A         on line 23 of _first-section.scss\A         from line 5 of style.scss\A \A 18:     }\A 19: \A 20:     h4 {\A 21:       height: 28px;\A 22:       m\A 23:     }\A 24:   }\A 25: \A 26:   .movie-rating {\A 27:     position: absolute;\A 28:     top: 8px;"; }
