@@ -33,7 +33,7 @@
     position: relative;
 
     img {
-      border: 4px solid #D3D3D3	;
+      border: 4px solid #D3D3D3;
       margin-bottom: 10px;
     }
 
@@ -57,5 +57,50 @@
 
   .movie {
     padding: 0 25px;
+    color: $dark-grey-color;
+  }
+
+  .sidebar {
+    padding: 4px 0;
+    color: #fff;
+    background: url("../images/sidebar-bg1.png") no-repeat;
+
+    h4 {
+      background: url("../images/h-bg.png") no-repeat;
+      width: 228px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-left: 7px;
+    }
+
+    .updates {
+      display: flex;
+      width: 228px;
+      margin: 10px;
+      border-bottom: 1px solid #000;
+
+      img {
+        border: 2px solid $grey-color;
+        margin-bottom: 12px;
+        margin-right: 6px;
+      }
+    }
+
+    .all-updates {
+      font-size: 12px;
+      position: relative;
+      margin-left: 22px;
+
+      &:after {
+        content: '';
+        background: url("../images/clapperboard.png");
+        width: 19px;
+        height: 20px;
+        position: absolute;
+        right: 64px;
+      }
+    }
   }
 }

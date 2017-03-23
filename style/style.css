@@ -227,7 +227,40 @@
     height: 21px;
     width: 245px; }
   .latest-movies .movie {
-    padding: 0 25px; }
+    padding: 0 25px;
+    color: #202020; }
+  .latest-movies .sidebar {
+    padding: 4px 0;
+    color: #fff;
+    background: url("../images/sidebar-bg1.png") no-repeat; }
+    .latest-movies .sidebar h4 {
+      background: url("../images/h-bg.png") no-repeat;
+      width: 228px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-left: 7px; }
+    .latest-movies .sidebar .updates {
+      display: flex;
+      width: 228px;
+      margin: 10px;
+      border-bottom: 1px solid #000; }
+      .latest-movies .sidebar .updates img {
+        border: 2px solid #6d6c6c;
+        margin-bottom: 12px;
+        margin-right: 6px; }
+    .latest-movies .sidebar .all-updates {
+      font-size: 12px;
+      position: relative;
+      margin-left: 22px; }
+      .latest-movies .sidebar .all-updates:after {
+        content: '';
+        background: url("../images/clapperboard.png");
+        width: 19px;
+        height: 20px;
+        position: absolute;
+        right: 64px; }
 
 body {
   background: url("../images/body-bg.png");
@@ -238,6 +271,9 @@ body {
 
 .small-text {
   font-size: 9px; }
+
+.red-text {
+  color: #f70f3b; }
 
 p, ul {
   margin-bottom: 0;

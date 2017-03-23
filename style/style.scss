@@ -3,6 +3,7 @@
 @import "header";
 @import "slider";
 @import "first-section";
+@import "footer";
 
 body {
   background: url("../images/body-bg.png");
@@ -15,6 +16,10 @@ body {
 
 .small-text {
   font-size: 9px;
+}
+
+.red-text {
+  color: $red-color;
 }
 
 p, ul {
