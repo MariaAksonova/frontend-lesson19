@@ -290,6 +290,7 @@ footer {
     right: 36px; }
   footer .footer-logo {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-top: 20px;
     width: 100%; }
