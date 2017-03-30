@@ -92,6 +92,7 @@
       font-size: 12px;
       position: relative;
       margin-left: 22px;
+      width: 230px;
 
       &:after {
         content: '';
@@ -99,7 +100,7 @@
         width: 19px;
         height: 20px;
         position: absolute;
-        right: 64px;
+        right: 46px;
       }
     }
   }

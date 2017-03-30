@@ -110,6 +110,12 @@
   justify-content: space-between;
   align-items: center; }
 
+@media (max-width: 738px) {
+  .nav > .container {
+    display: flex;
+    flex-direction: column; }
+    .nav > .container .search {
+      width: 240px; } }
 .carousel:after {
   content: '';
   background: url("../images/shape3.png");
@@ -256,44 +262,81 @@
     .latest-movies .sidebar .all-updates {
       font-size: 12px;
       position: relative;
-      margin-left: 22px; }
+      margin-left: 22px;
+      width: 230px; }
       .latest-movies .sidebar .all-updates:after {
         content: '';
         background: url("../images/clapperboard.png");
         width: 19px;
         height: 20px;
         position: absolute;
-        right: 64px; }
+        right: 46px; }
 
-.main .center-part {
-  background-color: #fff;
-  border-radius: 6px;
-  padding: 16px; }
-  .main .center-part .movies-in-cinemas {
-    position: relative; }
-    .main .center-part .movies-in-cinemas:after {
-      content: '';
-      background: url("../images/shadow2.png");
-      height: 16px;
-      width: 304px;
-      position: absolute; }
-    .main .center-part .movies-in-cinemas .in-cinemas {
+.main {
+  margin-bottom: 40px; }
+  .main .center-part {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 16px; }
+    .main .center-part .movies-in-cinemas {
+      position: relative; }
+      .main .center-part .movies-in-cinemas:after {
+        content: '';
+        background: url("../images/shadow2.png");
+        height: 16px;
+        width: 304px;
+        position: absolute;
+        bottom: -20px; }
+      .main .center-part .movies-in-cinemas .in-cinemas {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px; }
+    .main .center-part .audience {
+      margin-top: 10px;
+      position: relative; }
+      .main .center-part .audience:after {
+        content: '';
+        background: url("../images/shadow2.png");
+        height: 16px;
+        width: 304px;
+        position: absolute;
+        bottom: -20px; }
+      .main .center-part .audience h3 {
+        display: inline-block;
+        padding-right: 8px;
+        border-right: 2px solid #202020; }
+      .main .center-part .audience .movie-name {
+        font-size: 14px;
+        font-family: "TahomaBold", sans-serif; }
+  .main .news {
+    margin-top: 20px; }
+    .main .news:nth-child(2) {
+      margin-bottom: 16px; }
+    .main .news .news-footer {
       display: flex;
-      align-items: flex-start;
-      margin-bottom: 20px; }
-.main img {
-  margin: 0 6px 4px 0; }
-.main p {
-  font-size: 12px;
-  font-family: "Tahoma", sans-serif; }
-.main h3 {
-  font-size: 14px;
-  font-family: "TahomaBold", sans-serif;
-  color: #202020; }
-.main h4 {
-  font-size: 12px;
-  font-family: "TahomaBold", sans-serif;
-  color: #000; }
+      justify-content: space-between; }
+      .main .news .news-footer a {
+        margin-top: 0; }
+      .main .news .news-footer div {
+        display: flex;
+        flex-direction: column; }
+        .main .news .news-footer div span {
+          font-size: 10px;
+          font-family: "Tahoma", sans-serif;
+          color: #a2a2a2; }
+  .main img {
+    margin: 0 6px 4px 0; }
+  .main p {
+    font-size: 12px;
+    font-family: "Tahoma", sans-serif; }
+  .main h3 {
+    font-size: 14px;
+    font-family: "TahomaBold", sans-serif;
+    color: #202020; }
+  .main h4 {
+    font-size: 12px;
+    font-family: "TahomaBold", sans-serif;
+    color: #000; }
 
 footer {
   background: url("../images/footer-bg.png");
@@ -378,6 +421,11 @@ h4 {
   color: #fff;
   font-size: 11px;
   font-weight: bold;
-  margin-top: 14px; }
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .main-btn:hover {
+    color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

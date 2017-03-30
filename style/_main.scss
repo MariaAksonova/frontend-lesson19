@@ -1,6 +1,8 @@
 @import "variables";
 
 .main {
+  margin-bottom: 40px;
+
   .center-part {
     background-color: #fff;
     border-radius: 6px;
@@ -15,6 +17,7 @@
         height: 16px;
         width: 304px;
         position: absolute;
+        bottom: -20px;
       }
 
       .in-cinemas {
@@ -25,7 +28,60 @@
     }
 
     .audience {
+      margin-top: 10px;
+      position: relative;
 
+      &:after {
+        content: '';
+        background: url("../images/shadow2.png");
+        height: 16px;
+        width: 304px;
+        position: absolute;
+        bottom: -20px;
+      }
+
+      h3 {
+        display: inline-block;
+        padding-right: 8px;
+        border-right: 2px solid $dark-grey-color;
+      }
+
+      .movie-name {
+        font-size: 14px;
+        font-family: $font-bold;
+      }
+    }
+  }
+
+  .news {
+    margin-top: 20px;
+
+
+    &:nth-child(2) {
+      margin-bottom: 16px;
+    }
+
+
+    .news-footer {
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        margin-top: 0;
+
+
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-size: 10px;
+          font-family: $font-main;
+          color: #a2a2a2;
+        }
+      }
     }
   }
 
