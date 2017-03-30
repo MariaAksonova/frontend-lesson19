@@ -1,7 +1,7 @@
 @import "variables";
 
 .main {
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 
   .row {
     align-items: flex-start;
@@ -209,5 +209,9 @@
         }
       }
     }
+  }
+
+  .left-part {
+
   }
 }

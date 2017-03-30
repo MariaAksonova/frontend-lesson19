@@ -288,7 +288,7 @@
         right: 46px; }
 
 .main {
-  margin-bottom: 60px; }
+  margin-bottom: 10px; }
   .main .row {
     align-items: flex-start; }
   .main .center-part {
@@ -508,5 +508,32 @@ h4 {
   align-items: center; }
   .main-btn:hover {
     color: #fff; }
+
+.pagination {
+  margin-bottom: 80px; }
+  .pagination ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-end; }
+    .pagination ul .active {
+      background: url("../images/active-pag.png");
+      height: 29px;
+      width: 73px;
+      align-items: center; }
+      .pagination ul .active a {
+        font-size: 12px;
+        font-family: "TahomaBold", sans-serif; }
+    .pagination ul li {
+      background: url("../images/pag.png");
+      height: 19px;
+      width: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-left: -6px; }
+      .pagination ul li a {
+        color: #fff; }
+        .pagination ul li a:hover {
+          color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

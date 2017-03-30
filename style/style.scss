@@ -82,3 +82,40 @@ h4 {
   }
 }
 
+.pagination {
+  margin-bottom: 80px;
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+
+    .active {
+      background: url("../images/active-pag.png");
+      height: 29px;
+      width: 73px;
+      align-items: center;
+
+      a {
+        font-size: 12px;
+        font-family: $font-bold;
+      }
+    }
+
+    li {
+      background: url("../images/pag.png");
+      height: 19px;
+      width: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-left: -6px;
+
+      a {
+        color: #fff;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
