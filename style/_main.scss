@@ -1,0 +1,52 @@
+@import "variables";
+
+.main {
+  .center-part {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 16px;
+
+    .movies-in-cinemas {
+      position: relative;
+
+      &:after {
+        content: '';
+        background: url("../images/shadow2.png");
+        height: 16px;
+        width: 304px;
+        position: absolute;
+      }
+
+      .in-cinemas {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+      }
+    }
+
+    .audience {
+
+    }
+  }
+
+  img {
+    margin: 0 6px 4px 0;
+  }
+
+  p {
+    font-size: 12px;
+    font-family: $font-main;
+  }
+
+  h3 {
+    font-size: 14px;
+    font-family: $font-bold;
+    color: $dark-grey-color;
+  }
+
+  h4 {
+    font-size: 12px;
+    font-family: $font-bold;
+    color: #000;
+  }
+}

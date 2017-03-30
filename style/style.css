@@ -1,6 +1,9 @@
 @font-face {
   font-family: "Tahoma";
   src: url("../fonts/Tahoma.ttf") format("truetype"); }
+@font-face {
+  font-family: "TahomaBold";
+  src: url("../fonts/TahomaBold.ttf") format("truetype"); }
 .main-header {
   background: url("../images/header-bg.png");
   background-size: cover;
@@ -261,6 +264,36 @@
         height: 20px;
         position: absolute;
         right: 64px; }
+
+.main .center-part {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 16px; }
+  .main .center-part .movies-in-cinemas {
+    position: relative; }
+    .main .center-part .movies-in-cinemas:after {
+      content: '';
+      background: url("../images/shadow2.png");
+      height: 16px;
+      width: 304px;
+      position: absolute; }
+    .main .center-part .movies-in-cinemas .in-cinemas {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px; }
+.main img {
+  margin: 0 6px 4px 0; }
+.main p {
+  font-size: 12px;
+  font-family: "Tahoma", sans-serif; }
+.main h3 {
+  font-size: 14px;
+  font-family: "TahomaBold", sans-serif;
+  color: #202020; }
+.main h4 {
+  font-size: 12px;
+  font-family: "TahomaBold", sans-serif;
+  color: #000; }
 
 footer {
   background: url("../images/footer-bg.png");
