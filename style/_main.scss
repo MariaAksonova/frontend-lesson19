@@ -218,10 +218,79 @@
       padding: 4px 14px;
     }
 
+    .movie-promo, .design-by {
+      h4 {
+        background: url("../images/h-bg2.png") no-repeat;
+        width: 380px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 14px;
+        font-family: $font-main;
+      }
+
+      .h-border {
+        border-bottom: 1px solid $light-grey-color;
+        border-top: 1px solid $light-grey-color;
+      }
+
+      p {
+        padding: 8px 0;
+      }
+
+      a {
+        color: #fff;
+        font-size: 14px;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+
+      img {
+        width: 100%;
+        margin-bottom: 8px;
+      }
+
+      p {
+        color: #fff;
+      }
+
+      .sidebar-footer {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
     .movie-events {
       border-radius: 6px;
+      padding-top: 10px;
 
-      ul {
+      .premieres {
+        h4 {
+          width: 50%;
+        }
+
+        .premiere-movies {
+          list-style: none;
+
+          li {
+            width: 49%;
+            display: inline-block;
+            a {
+              color: #fff;
+              font-size: 12px;
+
+              &:hover {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+
+      .rating {
         list-style: none;
         margin-bottom: 14px;
 
@@ -259,6 +328,20 @@
 
         h4 {
           margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+
+  .main {
+    .left-part {
+      .movie-promo, .design-by {
+        h4 {
+          background: url("../images/h-bg.png") no-repeat;
+          width: 228px;
         }
       }
     }
