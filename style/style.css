@@ -415,6 +415,9 @@
         font-family: "TahomaBold", sans-serif; }
         .main .right-part .random a:hover {
           color: #fff; }
+  .main .left-part .movie-events, .main .left-part .movie-promo, .main .left-part .design-by {
+    background: url("../images/sidebar-bg3.png");
+    margin-bottom: 6px; }
 
 footer {
   background: url("../images/footer-bg.png");
