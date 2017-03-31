@@ -155,4 +155,12 @@
   }
 }
 
+@media (max-width: 360px) {
+  .nav>.container {
+    .search {
+      width: 190px;
+    }
+  }
+}
+
 
