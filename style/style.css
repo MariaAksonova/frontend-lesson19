@@ -288,7 +288,7 @@
         right: 46px; }
 
 .main {
-  margin-bottom: 10px; }
+  margin-bottom: 2px; }
   .main .row {
     align-items: flex-start; }
   .main .center-part {
@@ -417,7 +417,33 @@
           color: #fff; }
   .main .left-part .movie-events, .main .left-part .movie-promo, .main .left-part .design-by {
     background: url("../images/sidebar-bg3.png");
-    margin-bottom: 6px; }
+    margin-bottom: 6px;
+    padding: 4px 14px; }
+  .main .left-part .movie-events {
+    border-radius: 6px; }
+    .main .left-part .movie-events ul {
+      list-style: none;
+      margin-bottom: 14px; }
+      .main .left-part .movie-events ul li {
+        display: flex;
+        justify-content: flex-start; }
+        .main .left-part .movie-events ul li span {
+          margin-right: 6px; }
+        .main .left-part .movie-events ul li a {
+          color: #fff; }
+          .main .left-part .movie-events ul li a:hover {
+            color: #fff; }
+    .main .left-part .movie-events h4 {
+      color: #a2a2a2;
+      padding: 8px 0; }
+    .main .left-part .movie-events .h-border {
+      border-bottom: 1px solid #a2a2a2;
+      border-top: 1px solid #a2a2a2; }
+    .main .left-part .movie-events .events-header {
+      display: flex;
+      justify-content: space-between; }
+      .main .left-part .movie-events .events-header h4 {
+        margin-bottom: 0; }
 
 footer {
   background: url("../images/footer-bg.png");

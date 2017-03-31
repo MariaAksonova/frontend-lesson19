@@ -1,7 +1,7 @@
 @import "variables";
 
 .main {
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 
   .row {
     align-items: flex-start;
@@ -215,6 +215,52 @@
     .movie-events, .movie-promo, .design-by {
       background: url("../images/sidebar-bg3.png");
       margin-bottom: 6px;
+      padding: 4px 14px;
+    }
+
+    .movie-events {
+      border-radius: 6px;
+
+      ul {
+        list-style: none;
+        margin-bottom: 14px;
+
+        li {
+          display: flex;
+          justify-content: flex-start;
+
+          span {
+            margin-right: 6px;
+          }
+
+          a {
+            color: #fff;
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      h4 {
+        color: $light-grey-color;
+        padding: 8px 0;
+      }
+
+      .h-border {
+        border-bottom: 1px solid $light-grey-color;
+        border-top: 1px solid $light-grey-color;
+      }
+
+      .events-header {
+        display: flex;
+        justify-content: space-between;
+
+        h4 {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }
