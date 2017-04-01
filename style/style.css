@@ -377,7 +377,7 @@
     border-radius: 0 0 6px 6px; }
     .main .right-part .h-bg {
       background: url("../images/h-bg.png") no-repeat;
-      width: 100%;
+      background-size: cover;
       height: 35px;
       display: flex;
       align-items: center;
@@ -434,7 +434,8 @@
     .main .premieres-events ul {
       list-style: none;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      width: 50%; }
       .main .premieres-events ul li {
         display: inline-block; }
         .main .premieres-events ul li a {
