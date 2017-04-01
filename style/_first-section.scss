@@ -3,6 +3,12 @@
 .latest-movies {
   padding: 34px 0;
 
+  a {
+    &:hover {
+      color: #fff;
+    }
+  }
+
   h4 {
     height: 28px;
     margin-bottom: 0;
@@ -79,7 +85,7 @@
 
     h4 {
       background: url("../images/h-bg.png") no-repeat;
-      width: 100%;
+      background-size: cover;
       height: 35px;
       display: flex;
       align-items: center;

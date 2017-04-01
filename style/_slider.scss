@@ -2,6 +2,12 @@
 
 .carousel {
 
+  a {
+    &:hover {
+      color: #fff;
+    }
+  }
+
   &:after {
     content: '';
     background: url("../images/shape3.png");

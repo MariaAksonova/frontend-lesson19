@@ -119,6 +119,8 @@
 @media (max-width: 360px) {
   .nav > .container .search {
     width: 190px; } }
+.carousel a:hover {
+  color: #fff; }
 .carousel:after {
   content: '';
   background: url("../images/shape3.png");
@@ -215,6 +217,8 @@
     display: none; } }
 .latest-movies {
   padding: 34px 0; }
+  .latest-movies a:hover {
+    color: #fff; }
   .latest-movies h4 {
     height: 28px;
     margin-bottom: 0; }
@@ -270,7 +274,7 @@
     border-radius: 4px; }
     .latest-movies .sidebar h4 {
       background: url("../images/h-bg.png") no-repeat;
-      width: 100%;
+      background-size: cover;
       height: 35px;
       display: flex;
       align-items: center;
@@ -425,13 +429,26 @@
         font-family: "TahomaBold", sans-serif; }
         .main .right-part .random a:hover {
           color: #fff; }
+  .main .premieres-events {
+    display: flex; }
+    .main .premieres-events ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column; }
+      .main .premieres-events ul li {
+        display: inline-block; }
+        .main .premieres-events ul li a {
+          color: #fff;
+          font-size: 12px; }
+          .main .premieres-events ul li a:hover {
+            color: #fff; }
   .main .left-part .movie-events, .main .left-part .movie-promo, .main .left-part .design-by {
     background: url("../images/sidebar-bg3.png");
     margin-bottom: 6px;
     padding: 4px 14px; }
   .main .left-part .movie-promo h4, .main .left-part .design-by h4 {
     background: url("../images/h-bg2.png") no-repeat;
-    width: 100%;
+    background-size: cover;
     height: 35px;
     display: flex;
     align-items: center;
@@ -459,18 +476,6 @@
   .main .left-part .movie-events {
     border-radius: 6px;
     padding-top: 10px; }
-    .main .left-part .movie-events .premieres h4 {
-      width: 50%; }
-    .main .left-part .movie-events .premieres .premiere-movies {
-      list-style: none; }
-      .main .left-part .movie-events .premieres .premiere-movies li {
-        width: 49%;
-        display: inline-block; }
-        .main .left-part .movie-events .premieres .premiere-movies li a {
-          color: #fff;
-          font-size: 12px; }
-          .main .left-part .movie-events .premieres .premiere-movies li a:hover {
-            color: #fff; }
     .main .left-part .movie-events .rating {
       list-style: none;
       margin-bottom: 14px; }
@@ -495,10 +500,6 @@
       .main .left-part .movie-events .events-header h4 {
         margin-bottom: 0; }
 
-@media (max-width: 400px) {
-  .main .left-part .movie-promo h4, .main .left-part .design-by h4 {
-    background: url("../images/h-bg.png") no-repeat;
-    width: 228px; } }
 footer {
   background: url("../images/footer-bg.png");
   background-size: cover;
